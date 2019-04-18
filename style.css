@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+}
+
+/* header - start */
+
+header {
+    border: 1px solid black;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #364129;
+    padding: 1em;
+}
+
+header h1 {
+    color: #C3C8BC;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+}
+
+header h2 {
+    color: #EBF4DF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+}
+
+/* header - end */
+
+/* main - start */
+
+main {
+    width: 100%; 
+    max-width: 50em;
+    display: grid;
+    /* grid-template: repeat(5, 60px) / repeat(4, 70px); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: .1em;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 1em auto;
+}
+
+div.input {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    
+    border: 2px solid #90BE57;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.number, .operation{
+    
+    /* padding-left: 2em;
+    padding-top: 1.3em; */
+    padding: 1em;
+}
+
+.clear {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    
+    padding: 1em;
+}
+
+.one, .two, .three, .plus {
+    grid-row: 2/3;
+}
+
+.four, .five, .six, .minus {
+    grid-row: 3/4;
+}
+
+.seven, .eight, .nine, .multiply {
+    grid-row: 4/5;
+}
+
+.dot, .zero, .equals, .divide {
+    grid-row: 5/6;
+}
+
+.dot {
+    grid-column: 1/2;
+}
+
+.zero {
+    grid-column: 2/3;
+}
+
+.equals {
+    grid-column: 3/4;
+}
+
+.divide {
+    grid-column: 4/5;
+}
+
+.all {
+    background-color: #DDFBB9;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    color: #253116;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+.number:hover, .operation:hover , .clear:hover{
+    border: 2px solid #253116;
+}
+
+.number:active, .operation:active , .clear:active {
+    box-shadow: 1px 1px #717a33;
+    font-weight: bold;
+}
+
+/* main - end */
+
+/* footer - start */
+
+footer {
+    max-width: 40%;
+    min-width: 40%;
+    background-color: #364129;
+    text-align: center;
+    margin: 3em auto;
+    transform: rotate(7deg);
+    border-radius: .4em;
+}
+
+footer h2 {
+    color: #C3C8BC;
+    font-family: 'Amatic SC', cursive; 
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: #90BE57;
+}
+
+footer h2 a:hover {
+    color: #DDFBB9;
+}
+
+footer p {
+    color: #EBF4DF;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* footer - end */
